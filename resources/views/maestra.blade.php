@@ -115,7 +115,13 @@
             </li>
         </ul>
     </div>
+   <!--  <div id="app">
+        <example-component></example-component>
+        
+    </div> -->
+
 </nav>
+<script src="{{asset('js/app.js')}}"></script>
 <script type="text/javascript">
     // Tomado de https://parzibyte.me/blog/2019/06/26/menu-responsivo-bootstrap-4-sin-dependencias/
     document.addEventListener("DOMContentLoaded", () => {
