@@ -96,7 +96,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route("clientes.index")}}">Clientes&nbsp;<i class="fa fa-users"></i></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route("graficos.index")}}">Graficos&nbsp;<i class="fa fa-chart-line"></i></a>
+                </li>
             @endguest
+
         </ul>
         <ul class="navbar-nav ml-auto">
             @auth

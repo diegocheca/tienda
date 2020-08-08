@@ -29,6 +29,7 @@ Route::get("/logout", function () {
 Route::middleware("auth")
     ->group(function () {
         Route::resource("clientes", "ClientesController");
+        Route::resource("graficos", "GraficosController");
         Route::resource("usuarios", "UserController")->parameters(["usuarios" => "user"]);
         Route::resource("productos", "ProductosController");
         Route::get("/ventas/ticket", "VentasController@ticket")->name("ventas.ticket");
@@ -43,3 +44,18 @@ Route::get('/exportar' , 'UserController@export' );
 Route::get('/exportar_exel_productos' , 'ProductosController@exportarexcel' );
 
 Route::get('/exportar_pdf_productos' , 'ProductosController@exportarproductosapdf' );
+
+Route::get('/vender_nuevo' , 'VenderController@vender_vue' );
+
+
+
+
+//clientes en tickets
+Route::get('/clientes_get_ticket_todos', 'ClientesController@get_clientes_ticket');
+Route::get('/clientes_get_todos_los_datos/{id}', 'ClientesController@get_cliente_todos_los_datos');
+
+
+
+//graficos
+//Route::get('/graficos' , 'ProductosController@graficos' );
+

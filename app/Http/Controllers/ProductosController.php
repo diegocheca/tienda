@@ -101,6 +101,8 @@ class ProductosController extends Controller
     {
         return view("productos.productos_create");
     }
+    
+
 
     /**
      * Store a newly created resource in storage.

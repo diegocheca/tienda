@@ -168,7 +168,8 @@ class VenderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    
+public function index()
     {
         $total = 0;
         foreach ($this->obtenerProductos() as $producto) {
@@ -180,4 +181,11 @@ class VenderController extends Controller
                 "clientes" => Cliente::all(),
             ]);
     }
+
+    public function vender_vue()
+    {
+        return view("vender.vender_vue");
+    }
+
+    
 }

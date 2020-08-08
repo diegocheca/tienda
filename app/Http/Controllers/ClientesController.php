@@ -58,6 +58,20 @@ class ClientesController extends Controller
     {
         //
     }
+    //vue ventas
+     public function get_clientes_ticket()
+    {
+        //
+        $posts = Cliente::select('id','nombre','telefono','acuenta','deuda','foto')->get();
+        return response()->json($posts);
+    }
+    public function get_cliente_todos_los_datos($id)
+    {
+        //
+        //dd($id);
+        $posts = Cliente::find($id);
+        return response()->json($posts);
+    }
 
     /**
      * Show the form for editing the specified resource.

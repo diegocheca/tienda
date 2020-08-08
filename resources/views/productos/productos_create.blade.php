@@ -57,6 +57,17 @@
 						   type="decimal(9,2)" placeholder="Precio en dolar" value="12.36">
 				</div>
 				<div class="form-group">
+					<label class="label">stock minimo</label>
+					<input required autocomplete="off" name="stock_minimo" class="form-control"
+						   type="number" placeholder="Stock minimo" value="86">
+				</div>
+				<div class="form-group">
+					<label class="label">Stock maximo</label>
+					<input required autocomplete="off" name="stock_maximo" class="form-control"
+						   type="number" placeholder="Stock maximo" value="521">
+				</div>
+
+				<div class="form-group">
 					<label class="label" for="foto">Foto</label>
 					<input required autocomplete="off" name="foto" id="foto" class="form-control"
 						   type="file" placeholder="Busca..">

@@ -21,6 +21,16 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+//graficos
+Vue.component('grafica-component', require('./components/graficos.vue').default);
+
+//ventas
+
+Vue.component('ventasindex', require('./components/VentaIndexCompontent.vue').default);
+Vue.component('buscador-cliente', require('./components/BuscadorClienteComponent.vue').default);
+Vue.component('crear-cliente', require('./components/CrearClienteComponent.vue').default);
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -22,5 +22,12 @@
         "sass-loader": "^8.0.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "moment": "^2.24.0",
+        "chart.js": "^2.9.3",
+        "toastr": "^2.1.4",
+        "vue-chartjs": "^3.5.0",
+        "vue-select": "^3.5.2"
     }
 }

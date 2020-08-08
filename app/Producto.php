@@ -27,7 +27,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Producto extends Model
 {
-    protected $fillable = ["codigo_barras", "descripcion", "precio_compra", "precio_venta", "existencia","precio_en_dolar","foto1",
+    protected $fillable = ["codigo_barras", "descripcion", "precio_compra", "precio_venta", "existencia","precio_en_dolar","foto1","stock_minimo", "stock_maximo"
     ];
     public function scopeDescripcion($query, $descripcion)
     {
